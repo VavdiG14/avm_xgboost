@@ -1,3 +1,85 @@
+# MLflow
+mlruns/
+mlflow.db
+mlruns.db
+
+# Data files
+data/
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.feather
+*.pickle
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+processed_data.joblib
+selected_features.joblib
+
+# Model files
+models/
+*.model
+*.pkl
+*.joblib
+final_model.joblib
+best_model.joblib
+
+# Images and plots
+notebooks/img/*
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.pdf
+*.svg
+feature_importance.png
+predictions.png
+learning_curves.png
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+*.ipynb_checkpoints
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+.python-version
+
+# Logs
+*.log
+logs/
+tensorboard_logs/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Build and distribution
+dist/
+build/
+*.egg-info/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

@@ -1,0 +1,21 @@
+name: house_price_prediction
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12.4
+  - pip
+  - pip:
+    - pandas
+    - numpy
+    - scikit-learn
+    - xgboost
+    - optuna
+    - mlflow
+    - azureml-core
+    - azureml-mlflow
+    - azureml-sdk
+    - azureml-telemetry
+    - azureml-train-automl
+    - azureml-train-automl-runtime
+    - openpyxl

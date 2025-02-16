@@ -1,0 +1,19 @@
+$schema: https://azuremlschemas.azureedocs.net/latest/commandJob.schema.json
+code: ../src
+command: |
+  python train.py \
+    --data-path ${{inputs.training_data}} \
+    --model-output ${{outputs.model_output}}
+inputs:
+  training_data:
+    type: uri_file
+    path: azureml://datastores/workspaceblobstore/paths/data/raw/house_prices.csv
+outputs:
+  model_output:
+    type: mlflow_model
+    path: azureml://datastores/workspaceblobstore/paths/models/
+environment:
+  conda_file: environment.yml
+  image: mcr.microsoft.com/azureml/openmpi4.1.0-ubuntu20.04
+compute:
+  target: azureml:gpu-cluster 

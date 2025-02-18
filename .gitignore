@@ -19,7 +19,8 @@ processed_data.joblib
 selected_features.joblib
 
 # Model files
-models/
+
+/models/ 
 *.model
 *.pkl
 *.joblib
